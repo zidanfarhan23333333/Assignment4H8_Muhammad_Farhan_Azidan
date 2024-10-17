@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #form-section {
+        background-color: white;
+        padding: 20px;
+        width: 400px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .input-group {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+      }
+
+      .input-group label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      .input-group input {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      .btn-submit {
+        width: 100%;
+        background-color: #3a801c;
+        color: white;
+        padding: 10px;
+        font-size: 1rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+
+      .btn-submit:hover {
+        background-color: #336a18;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="form-section">
+      <form id="app-form">
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="input-group">
+          <label for="role">Role</label>
+          <input type="text" id="role" />
+        </div>
+        <div class="input-group">
+          <label for="availability">Availability</label>
+          <input type="text" id="availability" />
+        </div>
+        <div class="input-group">
+          <label for="age">Usia</label>
+          <input type="text" id="age" />
+        </div>
+        <div class="input-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" />
+        </div>
+        <div class="input-group">
+          <label for="experience">Experience</label>
+          <input type="text" id="experience" />
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" />
+        </div>
+        <button class="btn-submit" onclick="window.location.href='index.html'">
+          Submit
+        </button>
+      </form>
+    </section>
+
+    <script src="form.js"></script>
+  </body>
+</html>
